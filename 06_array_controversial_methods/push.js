@@ -5,15 +5,17 @@ const originalRef = original;
 console.log(originalRef === original);
 
 console.log(original);
-console.log(original.pop());
+original.pop();
 console.log(original);
-console.log(original.push(7));
+original.push(7);
 console.log(original);
+
+console.log(originalRef);
 
 console.log(originalRef === original);
 
-let aNumber = 5;
-const stateManager = aNumber;
-console.log(stateManager === aNumber);
-aNumber = 6;
-console.log(stateManager === aNumber);
+// let aNumber = 5;
+// const stateManager = aNumber;
+// console.log(stateManager === aNumber);
+// aNumber = 6;
+// console.log(stateManager === aNumber);
